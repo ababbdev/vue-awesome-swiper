@@ -13,15 +13,15 @@
     "url": "https://github.com/surmon-china/vue-awesome-swiper/issues"
   },
   "homepage": "https://github.com/surmon-china/vue-awesome-swiper#readme",
-  "main": "dist/vue-awesome-swiper.js",
-  "unpkg": "dist/vue-awesome-swiper.js",
-  "jsnext:main": "dist/vue-awesome-swiper.js",
+  "main": "vue-awesome-swiper.js",
+  "unpkg": "vue-awesome-swiper.js",
+  "jsnext:main": "vue-awesome-swiper.js",
   "files": [
     "dist",
     "src"
   ],
   "jspm": {
-    "main": "dist/vue-awesome-swiper.js",
+    "main": "vue-awesome-swiper.js",
     "registry": "npm",
     "format": "esm"
   },
@@ -41,7 +41,7 @@
   ],
   "scripts": {
     "build:spa": "cross-env NODE_ENV=production webpack --config config/build.conf.js",
-    "build:ssr": "babel src/ssr.js --out-file dist/ssr.js",
+    "build:ssr": "babel src/ssr.js --out-file ssr.js",
     "build": "npm run build:spa && npm run build:ssr",
     "unit": "cross-env BABEL_ENV=test NODE_ENV=testing karma start test/unit/karma.conf.js --watch",
     "test": "cross-env BABEL_ENV=test NODE_ENV=testing karma start test/unit/karma.conf.js --single-run",
